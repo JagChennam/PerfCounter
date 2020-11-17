@@ -61,13 +61,13 @@ namespace PerfCounter
             Console.WriteLine("Counter name: {0}", memoryUsage.CounterName);
             Console.WriteLine("Help text: {0}", memoryUsage.CounterHelp);
             Console.WriteLine("------------------------------");
-            while (true)
-            {
+            //while (true)
+            //{
                 Console.WriteLine("CPU value: {0}", processorTimeCounter.NextValue());
                 Console.WriteLine("Memory value: {0}", memoryUsage.NextValue());
                 Thread.Sleep(3000);
 
-            }
+            //}
 
             string x = DoSomething();
            
